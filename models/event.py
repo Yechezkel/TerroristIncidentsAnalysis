@@ -7,9 +7,9 @@ from . import Base
 class Event(Base):  # todo:indices
     __tablename__ = "events"
     id = Column(Integer, primary_key=True, autoincrement=True)
-    attackers_num = Column(Integer, nullable=False, default=1, server_default="1") # why str in server_default?
-    injuries_num = Column(Integer, nullable=False, default=0, server_default="0")
-    fatalities_num = Column(Integer, nullable=False, default=0, server_default="0")
+    attackers_num = Column(Integer, nullable=True, default=1, server_default="1") # why str in server_default?
+    injuries_num = Column(Integer, nullable=True, default=0, server_default="0")
+    fatalities_num = Column(Integer, nullable=True, default=0, server_default="0")
     date = Column(Date, nullable=False)
     longitude = Column(Float, nullable=False)
     latitude = Column(Float, nullable=False)
