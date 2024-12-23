@@ -7,6 +7,7 @@ import os
 
 
 
+
 if __name__ == '__main__':
     load_dotenv()
     rebuild_all_tables()

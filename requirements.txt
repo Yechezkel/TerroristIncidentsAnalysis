@@ -2,3 +2,6 @@ sqlalchemy
 psycopg2
 groq
 python-dotenv
+requests
+geopy
+redis

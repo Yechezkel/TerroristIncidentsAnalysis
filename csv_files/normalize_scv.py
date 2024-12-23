@@ -24,7 +24,6 @@ def normalize_dataset(): # this is a dev function not for production
     # df['nkill'] = df['nkill'].map(lambda x: None if x<0 or x==np.nan else x)
     # df['nperps'] = df['nperps'].map(lambda x: None if x<0 or x==np.nan else x)
     df[["nperps", "nkill", "nwound"]] = df[["nperps","nkill" ,"nwound"]].fillna(-99)  # todo:to handle it with a null value not -99, and then in the function df_to_db to add the option to convert np.nan into None
-
     column_rename_map = {
         'weaptype1_txt': 'weapon_type',
         'weaptype1': 'weapon_type_id',
